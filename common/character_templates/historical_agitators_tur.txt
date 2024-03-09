@@ -1,0 +1,57 @@
+agitator_namik_kemal = {
+	first_name = "Namık"
+	last_name = "Kemal"
+	historical = yes
+	culture = cu:turkish
+	birth_date = 1840.12.21
+	is_agitator = yes 
+	interest_group = ig_intelligentsia
+	female = no
+	ideology = ideology_radical
+	traits = {
+		literary
+		romantic
+		pious
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			has_law = law_type:law_monarchy
+		}
+		earliest_usage_date = 1862.1.1
+		latest_usage_date = 1888.12.2
+		chance = 50
+	}
+}
+
+agitator_ziya_pasa = {	#Ziya Paşa
+	first_name = "Abdülhamid"
+	last_name = "Ziyaeddin"
+	historical = yes
+	culture = cu:turkish
+	birth_date = 1829.1.1
+	is_agitator = yes 
+	interest_group = ig_intelligentsia
+	female = no
+	ideology = ideology_liberal_leader
+	traits = {
+		literary
+		master_bureaucrat
+		wrathful
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			has_law = law_type:law_monarchy
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_intelligentsia
+        }   
+		earliest_usage_date = 1865.1.1
+		latest_usage_date = 1880.5.17
+		chance = 25
+	}
+}

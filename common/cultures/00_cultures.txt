@@ -6749,69 +6749,81 @@ turkish={
 		coffee
 	}
 	male_common_first_names={
-		Abdulhak_Adnan Abdulhak_Hamit Abdulhalik_Nasuhi Abdulkadir_Abdullah Abdullah_Avni Abdullah_Azmi Abdullah_Faik Abdullah_Hilmi
-		Abdulmecid Abdulvahap Abdurrahman_Nureddin Abdurrahman_Sami Abdurrahman_Seref Abdurrahman_Vasfi Abdurrezzak Adil Ahmed
-		Ahmed_Arifi Ahmed_Cevad Ahmed_Esad Ahmed_Fevzi Ahmed_Hamdi Ahmed_Hilmi Ahmed_Kemal Ahmed_Muhtar Ahmed_Munir Ahmed_Naim
-		Ahmed_Remzi Ahmed_Sefik Ahmed_Selahaddin Ahmed_Sukru Ahmed_Tayyar Ahmed_Vefik Ahmed_Celal Ahmed_Ferit Ahmed_Izzet Ahmed_Muhtar Ahmed_Rifat
-		Ahmed_Rustem Ahmed_Tevfik Ahmed_Ziya Alaeddin_Ali Ali_Galib Ali_Haydar Ali_Kabuli Ali_Munif Ali_Naki Ali_Riza Ali_Sefik Ali_Sukru
-		Arif_Fazil Arif_Hikmet Asaf_Suleyman Asim Aziz_Ahmed Bahir_Mustafa Bayezid Bayram Bekir_Sami Bekir_Sitki Bekri_Mustafa Cavit Celal_Nuri
-		Celalettin_Arif Cevad_Sakir Cevat_Abbas Davud Dervis_Mehmed Dilaver Ekrem Husrev Emin Esref Ethem Fakih Fakih_Yusuf Faruk_Sami Fazil Fazil_Ahmed
-		Fazil_Mustafa Ferhat Feyzi Fuad Fuat Haci Haci_Ahmed Haci_Ali Haci_Bekir Haci_Halil Haci_Huseyin Haci_Salih Haci_Veli Hafiz_Ahmed Hafiz_Ismail
-		Hakki Hakki_Behic Halid_Ziya Halil Halil_Hamid Halil_Hayreddin Halil_Hulki Halil_Rifat Halim Halit Hamza Hamza_Hamid Hasan Hasan_Fehmi Hasan_Hayri
-		Hasan_Izzet Hasan_Riza Hasan_Sezai Hasan_Tahsin Haydar Hayreddin Hursid Hursid_Ahmed Huseyin Huseyin_Avni Huseyin_Baki Huseyin_Cahit Huseyin_Hilmi
-		Huseyin_Husnu Huseyin_Kazim Huseyin_Rauf Huseyin_Sirri Husrev Husrev_Mehmed Ibrahim Ibrahim_Edhem Ibrahim_Faik Ibrahim_Hakki Ibrahim_Halil
-		Ibrahim_Hayrullah Ibrahim_Hilmi Ibrahim_Ismet Ibrahim_Refet Ibrahim_Sarim Ibrahim_Sureyya Irfan Ishak Ismail Ismail_Fazil Ismail_Hakki
-		Ismail_Sitki Ismet Izzet_Fuat Izzet_Mehmed Kamil Kasim_Nuri Kazim Kazim_Nuri Kemal Kemaleddin Lutfi Lutfi_Fikri Mahir Mahir_Hamza Mahir_Said
-		Mahmud Mahmud_Edhem Mahmud_Ekrem Mahmud_Nedim Mahmud_Server Mahmut_Celalettin Mahmut_Mahir Mahmut_Naci Mazhar_Mufit Mehmed Mehmed_Abdulhalim
-		Mehmed_Ali Mehmed_Asim Mehmed_Behim Mehmed_Besim Mehmed_Cavid Mehmed_Celal Mehmed_Cemal Mehmed_Emin Mehmed_Esad Mehmed_Ferid Mehmed_Fuat
-		Mehmed_Haci Mehmed_Hadi Mehmed_Halet Mehmed_Kadri Mehmed_Kani Mehmed_Namik Mehmed_Nizamuddin Mehmed_Ragip Mehmed_Raif Mehmed_Rauf 
-		Mehmed_Remzi Mehmed_Rusdi Mehmed_Sadik Mehmed_Sahib Mehmed_Said Mehmed_Sakir Mehmed_Sekib Mehmed_Selim Mehmed_Serafettin Mehmed_Sukru
-		Mehmed_Talat Mehmed_Tevfik Mehmed_Vehbi Mehmed_Ziyaeddin Mehmed_Galip Mehmed_Habip Mehmed_Kamil Mehmed_Meded Mehmed_Muzaffer Mehmed_Sadik
-		Mehmed_Tahir Mehmed_Vasfi Mehmed_Ziya Mehmed_Zulfu Memis Mithat Mithat_Sukru Muhammed_Emin Muhiddin Muhittin Munip Musa Musa_Kasim Musa_Kazim
-		Mustafa Mustafa_Arif Mustafa_Asim Mustafa_Ferhad Mustafa_Fevzi Mustafa_Hayri Mustafa_Hilmi Mustafa_Hulusi Mustafa_Nail Mustafa_Nuri 
-		Mustafa_Rahmi Mustafa_Resid Mustafa_Sabri Mustafa_Salih Mustafa_Vasif Mustafa_Zihni Namik Nasuh Nizamuddin Nizamuddin_Ahmed Numan Omer_Azmi
-		Omer_Fevzi Omer_Lutfi Omer_Mumtaz Omer_Rusdu Omer_Vehbi Osman_Fevzi Osman_Kadri Osman_Nuri Ragip Rahmi Rasim Rauf_Ahmed Recep Resat_Hikmet
-		Resid_Akif Resid_Mehmed Rifat Riza_Tevfik Ruhittin Rustem Rustu Sadullah_Fevzi Sahin_Ali Said_Galip Said_Halim Said_Mehmed Said_Servet
-		Salih Salih_Hulusi Sefik Selim_Sirri Semsi Semsi_Ahmed Serif_Hasan Sevket Sevki_Mustafa Seyyid_Ali Sinan Sinanuddin Sinanuddin_Fakih Siyavus
-		Suat Sukru_Nasih Suleyman Suleyman_Necati Suleyman_Necmi Tahir Tahir_Hayreddin Tayyar Tayyar_Mehmed Ubeydullah Vasfi Veli_Mahmud Yahya Yahya_Naci
-		Yavuz Yavuz_Ali Yunus Yunus_Nadi Yusuf Yusuf_Bahri Yusuf_Kamil Yusuf_Kemal Yusuf_Talat Yusuf_Ziya Yusuf_Ziyauddin Zeki Zihni Ziya
+		Abdullah "Abdullah Avni" "Abdullah Azmi" "Abdullah Faik" "Abdullah Hilmi" Abdurrahman "Abdurrahman Nureddin" "Abdurrahman Sami" "Abdurrahman Şeref" "Abdurrahman Vasfi" 
+		Abdülaziz Abdülbaki "Abdülhak Adnan" "Abdülhak Hamit" "Abdülhalik Nasuhi" Abdülkadir "Abdülkadir Abdullah" Abdülmecid Abdülvahap Abdürrezzak Adem Adil Adnan Ahmet
+		"Ahmet Arifi" "Ahmet Cevad" "Ahmet Emin" "Ahmet Esad" "Ahmet Fevzi" "Ahmet Hamdi" "Ahmet Hilmi" "Ahmet Kemal" "Ahmet Muhtar" "Ahmet Münir" "Ahmet Naim"
+		"Ahmet Remzi" "Ahmet Şefik" "Ahmet Selahaddin" "Ahmet Şükrü" "Ahmet Tayyar" "Ahmet Turan" "Ahmet Vefik" "Ahmet Celal" "Ahmet Ferit" "Ahmet İzzet" "Ahmet Muhtar" "Ahmet Rifat"
+		"Ahmet Rüstem" "Ahmet Tevfik" "Ahmet Ziya" "Alaeddin Ali" Ali "Ali Abbas" "Ali Fuat" "Ali Galib" "Ali Haydar" "Ali İhsan" "Ali Kabuli" "Ali Kemal" "Ali Murat" "Ali Münif" "Ali Naci" "Ali Naki" "Ali Osman" 
+		"Ali Rıza" "Ali Sait" "Ali Seydi" "Ali Şefik" "Ali Şükrü" Arif "Arif Fazıl" "Arif Hikmet" "Asaf Süleyman" Asım Aziz "Aziz Ahmet" 
+		Bahattin "Bahir Mustafa" Bayezid Bayram "Bayram Ali" Bekir "Bekir Ali" "Bekir Sami" "Bekir Sıtkı" "Bekri Mustafa" Bilal Burhaneddin
+		Cafer "Cafer Sadık" Cavit Cemal Cemil Celal "Celal Nuri" "Celalettin Arif" "Cevad Şakir" "Cevat Abbas" 
+		Davut "Demir Ali" Derviş Mehmet Dilaver Durmuş "Durmuş Ali" Dursun "Dursun Ali" 
+		Ekrem Emin Eşref Ethem Eyüp "Eyüp Sabri"
+		Fahrettin Fakih "Fakih Yusuf" Faruk "Faruk Sami" Fazıl "Fazıl Ahmet" "Fazıl Mustafa" Ferhat Fevzi Feyzi Fikret Fuad Fuat 
+		Hacı "Hacı Abdullah" "Hacı Ahmet" "Hacı Ali" "Hacı Bekir" "Hacı Halil" "Hacı Hüseyin" "Hacı İbrahim" "Hacı Salih" "Hacı Veli" "Hafız Ahmet" "Hafız İsmail" Hakkı "Hakkı Behiç" "Halid Ziya" Halil 
+		Hakkı "Halil İbrahim" "Halil Hamid" "Halil Hayreddin" "Halil Hulki" "Halil Rifat" Halim Halit Hamdi Hamza "Hamza Hamid" Harun Hasan "Hasan Ali" "Hasan Basri" "Hasan Fehmi" "Hasan Hayri" "Hasan Hüseyin" 
+		"Hasan İzzet" "Hasan Rıza" "Hasan Sezai" "Hasan Tahsin" Haydar "Haydar Ali" Hayreddin Hikmet Hurşid "Hurşid Ahmet" Hüseyin "Hüseyin Ali" "Hüseyin Avni" "Hüseyin Baki" "Hüseyin Cahit" 
+		"Hüseyin Hilmi" "Hüseyin Hüsnü" "Hüseyin Kazım" "Hüseyin Rauf" "Hüseyin Sırrı" Hüsrev "Hüsrev Mehmet" 
+		İbrahim "İbrahim Ethem" "İbrahim Faik" "İbrahim Hakkı" "İbrahim Halil" "İbrahim Hayrullah" "İbrahim Hilmi" "İbrahim İsmet" "İbrahim Refet" "İbrahim Sarim" "İbrahim Süreyya" 
+		İhsan "İhsan Nuri" İlhan İlyas İrfan İsa İshak İsmail "İsmail Fazıl" "İsmail Hakkı" "İsmail Sıtkı" İsmet İzzet "İzzet Fuat" "İzzet Mehmet" İzzettin
+		Kamil "Kasım Nuri" Kazım "Kazım Nuri" Kemal Kemaleddin 
+		Lütfi "Lütfi Fikri" 
+		Mahir "Mahir Hamza" "Mahir Sait" Mahmut "Mahmut Ethem" "Mahmut Ekrem" "Mahmut Nedim" "Mahmut Server" "Mahmut Celalettin" "Mahmut Mahir" "Mahmut Naci" "Mazhar Müfit" Mehmet 
+		"Mehmet Abdülhalim" "Mehmet Akif" "Mehmet Ali" "Mehmet Arif" "Mehmet Asım" "Mehmet Behim" "Mehmet Besim" "Mehmet Cavid" "Mehmet Celal" "Mehmet Cemal" "Mehmet Emin" "Mehmet Esad" "Mehmet Ferid" "Mehmet Fuat"
+		"Mehmet Hacı" "Mehmet Hadi" "Mehmet Halet" "Mehmet Kadri" "Mehmet Kani" "Mehmet Namık" "Mehmet Nizamuddin" "Mehmet Nuri" "Mehmet Ragıp" "Mehmet Raif" "Mehmet Rauf" 
+		"Mehmet Remzi" "Mehmet Rüşdi" "Mehmet Sadık" "Mehmet Sahib" "Mehmet Sait" "Mehmet Şakir" "Mehmet Şekip" "Mehmet Selim" "Mehmet Şerafettin" "Mehmet Şerif" "Mehmet Şükrü"
+		"Mehmet Talat" "Mehmet Tevfik" "Mehmet Vehbi" "Mehmet Ziyaeddin" "Mehmet Galip" "Mehmet Habip" "Mehmet Kamil" "Mehmet Meded" "Mehmet Muzaffer" "Mehmet Sabri" "Mehmet Sadık"
+		"Mehmet Tahir" "Mehmet Vasfi" "Mehmet Zeki" "Mehmet Ziya" "Mehmet Zülfü" Memiş Mevlüt Mithat "Mithat Şükrü" Muammer Muharrem Muhiddin Muhittin Murat Musa "Musa Kasım" "Musa Kazım"
+		Mustafa "Mustafa Ali" "Mustafa Arif" "Mustafa Asım" "Mustafa Ferhat" "Mustafa Fevzi" "Mustafa Hayri" "Mustafa Hilmi" "Mustafa Hulusi" "Mustafa Nail" "Mustafa Nuri" 
+		"Mustafa Rahmi" "Mustafa Reşid" "Mustafa Sabri" "Mustafa Salih" "Mustafa Vasıf" "Mustafa Zihni" Muzaffer Münip
+		Naci Namık Nasuh Necati Nevzat Nihat Niyazi Nizamüddin "Nizamüddin Ahmet" Numan Nurettin Nuri
+		Orhan Osman "Osman Fevzi" "Osman Kadri" "Osman Nuri" Ömer "Ömer Azmi" "Ömer Faruk" "Ömer Fevzi" "Ömer Lütfi" "Ömer Mümtaz" "Ömer Osman" "Ömer Rüşdü" "Ömer Vehbi" 
+		Ragıp Rahmi Ramazan Rasim "Rauf Ahmet" Recep "Recep Ali" Remzi "Reşat Hikmet" "Reşid Akif" "Reşid Mehmet" Rifat Rıza "Rıza Tevfik" Ruhittin Rüstem Rüştü 
+		Sabri Sadık "Sadullah Fevzi" Sait "Sait Ali" "Sait Galip" "Sait Halim" "Sait Mehmet" "Sait Servet" Salih "Salih Hulusi" "Salih İbrahim" "Salih Zeki" Salim Sami Selahattin Selim "Selim Sırrı" Servet 
+		"Seyit Ali" "Seyit Ahmet" Sinan Sinanüddin "Sinanüddin Fakih" Siyavuş Suat Süleyman "Süleyman Hilmi" "Süleyman Necati" "Süleyman Necmi" "Süleyman Sırrı" 
+		Şaban Şahin "Şahin Ali" Şefik Şemsi "Şemsi Ahmet" Şerif "Şerif Hasan" Şevket "Şevki Mustafa" Şükrü "Şükrü Nasih" 
+		Tahir "Tahir Hayreddin" Tahsin Tayyar "Tayyar Mehmet" Turgut
+		Ubeydullah 
+		Vasfi Veli "Veli Mahmud" Veysel
+		Yahya "Yahya Naci" Yakup Yaşar Yavuz "Yavuz Ali" Yunus "Yunus Nadi" Yusuf "Yusuf Bahri" "Yusuf Kamil" "Yusuf Kemal" "Yusuf İzzettin" "Yusuf Talat" "Yusuf Ziya" "Yusuf Ziyauddin" 
+		Zekeriya Zeki Zihni Ziya
 	}
 	female_common_first_names = {
-		Abide Adile Afife Alime Aliye Arife Arzu Asiye Ayse Bahariye Belkis Cemile Cennet Elif Emine Esma Fahriye Fatma Feride Fikriye Gonca Gulsum Hacer Hamide
-		Hanife Hatice Havva Hilmiye Huma Huriye Ismihan Kadriye Kezban Latife Mahpeyker Makbule Meftune Melek Meryem Munteha Muslime Nazli Neslihan Nuriye Rabia
-		Rahime Raziye Refika Reyhan Rukiye Safiye Saime Sakine Saliha Salime Sanem Saniye Selvi Serife Sukriye Sultan Ummu Vahide Zahide Zehra Zeliha Zeynep 
-		Zuleyha Zulfiye
+		Abide Adile Afife Alime Aliye Arife Arzu Asiye Ayfer Aynur Ayşe Ayşegül Bahar Belkıs Cemile Cennet Döndü Elif Emel Emine Esma Fahriye Fatma Feride Fikriye Gönül Güler Gülizar
+		Gülten Gülsüm Hacer Halime Hamide Hanım	Hanife Hatice Havva Hayriye Hilmiye Hüma Huriye Hülya İsmihan Kadriye Kezban Kübra Latife Leyla Mahpeyker Makbule Meftune Melek Meral 
+		Meryem Münevver Münteha Müslime Naciye Nazlı Necla Nermin Neslihan Nuran Nuriye Nurten Perihan Rabia Rahime Raziye Refika Remziye Reyhan Rukiye Saadet Safiye Saime Sakine 
+		Saliha Salime Saniye Sebahat Seher Selma Selvi Semra Şerife Şükriye Sultan Ümmü Vahide Yıldız Zahide Zehra Zekiye Zeliha Zeynep Zübeyde	Züleyha Zülfiye
 	}	
 	noble_last_names = {
 		# Same with the common last names
 	}
 	common_last_names={
-		Abalizade Abdulkadirzade Abdullahzade Abdurrahmanzade Agazade Ahmedzade Akifzade Aksarayli Alemdarzade Alizade Altunizade Amasyali Amcazade Arabacizade 
-		Arifzade Asimzade Avlonyali Ayasli Aynizade Babanzade Bacanakzade Bagdatli Bahadirzade Bahaizade Baltacizade Bayburtlu Bayraktarzade Benderli Biyikli
+		Abalızade Abdulkadirzade Abdullahzade Abdurrahmanzade Ağazade Ahmetzade Akifzade Aksaraylı Alemdarzade Alizade Altunizade Amasyalı Amcazade Arabacızade 
+		Arifzade Asımzade Avlonyalı Ayaşlı Aynizade Babanzade Bacanakzade Bağdatlı Bahadırzade Bahaizade Baltacızade Bayburtlu Bayraktarzade Benderli Bıyıklı
 		Bolukbasizade Bostancibasi Bostancibasizade Bozoklu Burdurlu Burhanzade Bursali Caferzade Cagaloglu Camasli Candarli Carhacizade Cavusbasizade Cebecizade
-		Celebizade Cemaleddinzade Cenanizade Cezayirli Copurzade Corlulu Curuksulu Daltaban Damatzade Danismendzade Darendeli Degirmencizade Derviszade Dimetokali 
+		Çelebizade Cemaleddinzade Cenanizade Cezayirli Çopurzade Çorlulu Çürüksulu Daltaban Damatzade Danişmendzade Darendeli Değirmencizade Dervişzade Dimetokalı 
 		Divitdarzade Durrizade Eczacibasi Elmalili Elmaszade Eminzade Erzurumlu Evliyazade Evrenoszade Eyubzade Fazlizade Fescizade Germiyanoglu Gevelizade
-		Giritli Goncuzade Gozcuoglu Gumulcineli Gurcuzade Guzelcezade Hacibekirzade Hacikemalettinzade Halidzade Halimzade Halitzade Hasanagazade Hasanzade
-		Hatipzade Hattatzade Haydarzade Hayrullahzade Hazinedarzade Hekimoglu Helvacizade Hersekzade Hezarpare Hocazade Hotinli Huseyinzade Husnuzade
-		Ibrahimzade Imamzade Ipekcizade Ismailzade Ispartali Ispirzade Istankoylu Ivazzade Izmirli Kabaagaçlizade Kadirbeyzade Kadizade Kalafatzade Kalaylizade
-		Karahisarli Karamanzade Karaoglu Karavezirzade Kavanozzade Kayserili Kececizade Kemankeszade Kethudazade Kibrisli Koprulu Kosezade Kostenceli Kozanli
-		Kutahyalizade Kuyucuzade Ladikli Lefkeli Mahmudoglu Mahmudzade Malkocoglu Manastirli Mansurizade Manyasizade Marasli Mekkelizade Melekzade Menekselizade
-		Menemencizade Menemenlizade Mercimekzade Mersinli Merzifonlu Mevlevi Mihrizade Miraszade Mollazade Morali Muderriszade Muezzinzade Muftuzade Muhaddeszade
+		Giritli Göncüzade Gözcüoğlu Gümülcineli Gürcüzade Güzelcezade Hacıbekirzade Hacıkemalettinzade Halidzade Halimzade Halitzade Hasanağazade Hasanzade
+		Hatipzade Hattatzade Haydarzade Hayrullahzade Hazinedarzade Hekimoğlu Helvacızade Hersekzade Hezarpare Hocazade Hotinli Hüseyinzade Hüsnüzade
+		İbrahimzade İmamzade İpekçizade İsmailzade Ispartalı İspirzade İstanköylü İvazzade İzmirli Kabaağaçlızade Kadirbeyzade Kadızade Kalafatzade Kalaylızade
+		Karahisarlı Karamanzade Karaoğlu Karavezirzade Kavanozzade Kayserili Keçecizade Kemankeşzade Kethüdazade Kıbrıslı Köprülü Kösezade Köstenceli Kozanlı
+		Kütahyalızade Kuyucuzade Ladikli Lefkeli Mahmudoğlu Mahmudzade Malkoçoğlu Manastırlı Mansurizade Manyasizade Maraşlı Mekkelizade Melekzade Menekşelizade
+		Menemencizade Menemenlizade Mercimekzade Mersinli Merzifonlu Mevlevi Mihrizade Miraszade Mollazade Moralı Müderriszade Müezzinzade Müftüzade Muhaddeszade
 		Muhsinzade Musabalizade Musazade Muslihiddinzade Mustafazade Mutercimzade Nailizade Nasuhizade Nevesinli Nevsehirli Nisancizade Ohrili Osmancikli
-		Osmanzade Ozdemiroglu Pirincciizade Pirizade Plevneli Ramizade Raufzade Recaizade Reiszade Resitzade Ridvanbeyzade Rizazade Ruscuklu Safranbolulu 
-		Saidmehmedzade Sakizli Samipasazade Sapancali Saraczade Sarizade Saruhanli Satircizade Sehlazade Selanikli Serdarzade Serefbeyzade Serifzade Sevkizade 
-		Seyyidzade Silahdarzade Sirkatibizade Sirvanizade Sofuzade Sokolluzade Suhrabli Suleymanzade Sultanzade Surmeli Tarakcizade Tarhuncu Tascizade Tatlizade 
-		Tekeli Tekirdagli Tevkiizade Tezkerecizade Tiryakizade Tokadizade Topalzade Topçuzade Toydanzade Tunali Tunuslu Turnacizade Urguplu Uryanizade Vasifzade
-		Yagcizade Yaglikcizade Yenisehirlizade Yirmisekizzade Zekeriyazade
+		Osmanzade Özdemiroğlu Pirinççizade Pirizade Plevneli Ramizade Raufzade Recaizade Reiszade Resitzade Rıdvanbeyzade Rızazade Rusçuklu Safranbolulu 
+		Saidmehmetzade Sakızlı Samipaşazade Sapancalı Saraçzade Sarızade Saruhanlı Satırcızade Şehlazade Selanikli Serdarzade Şerefbeyzade Şerifzade Şevkizade 
+		Seyyidzade Silahdarzade Sırkatibizade Şirvanizade Sofuzade Sokolluzade Suhrablı Süleymanzade Sultanzade Sürmeli Tarakçızade Tarhuncu Taşçızade Tatlızade 
+		Tekeli Tekirdağlı Tevkiizade Tezkerecizade Tiryakizade Tokadizade Topalzade Topçuzade Toydanzade Tunalı Tunuslu Turnacızade Ürgüplü Üryanizade Vasıfzade
+		Yağcızade Yağlıkçızade Yenişehirlizade Yirmisekizzade Zekeriyazade
 	}
 	male_regal_first_names = {
-		Abdulaziz Abdulhamid Abdulmecid Ahmed Bayezid Ibrahim Isa Mahmud Mehmed Murad Musa Mustafa Orhan Osman Selim Suleyman
+		Abdülaziz Abdülhamid Abdülmecid Ahmet Bayezid İbrahim İsa Mahmud Mehmet Murad Musa Mustafa Orhan Osman Selim Süleyman
 	}
 	female_regal_first_names = {
-		Adile Atiye Ayse Cemile Emine Fatma Hamide Hatice Hayriye Mihrimah Munire Refia Saliha Zeynep
+		Adile Atiye Ayşe Cemile Emine Fatma Hamide Hatice Hayriye Mihrimah Münire Refia Saliha Zeynep
 	}
 	regal_last_names = {
-		Osmanoglu
+		Osmanoğlu
 	}
 
 	ethnicities = {
