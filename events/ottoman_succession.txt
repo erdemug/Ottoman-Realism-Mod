@@ -1,0 +1,51 @@
+namespace = ottomansuccession
+
+# Mahmud dies
+ottomansuccession.1 = {
+	type = country_event
+	placement = root
+	title = "Sultan Mahmud is dead"
+	desc = "Placeholder"
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	gui_window = event_window_1char_tabloid
+
+	trigger = {
+		NOT = { has_variable = sultan_mahmud_death }
+		game_date >= 1839.7.1		
+	}
+
+	immediate = {
+		set_variable = sultan_mahmud_death
+	}
+
+	option = {
+		name = "Placeholder"
+		default_option = yes
+		ruler = {
+			kill_character = yes
+		}
+		heir = {
+			set_character_as_ruler = yes
+		}
+		create_character = {
+			first_name = Abdulaziz			
+			last_name = Osmanoglu
+			birth_date = 1830.2.8 
+			culture = cu:turkish
+			heir = yes
+			historical = yes
+			religion = sunni
+			interest_group = ig_landowners
+			ideology = ideology_jingoist_leader
+			traits = { 
+				ambitious
+				bigoted
+			}
+		}
+
+	}
+}
