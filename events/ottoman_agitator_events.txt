@@ -1,6 +1,6 @@
-namespace = ottoman_agitators
+namespace = ottomanagitators
 
-ottoman_agitators.1 = { #Namık Kemal
+ottomanagitators.1 = { #Namık Kemal
 	type = country_event
 	placement = root
 
@@ -12,9 +12,9 @@ ottoman_agitators.1 = { #Namık Kemal
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
-	title = "Placeholder_title"
-	desc = "Placeholder_desc"
-	flavor = "Placeholder_flavor"
+	title = ottomanagitators.1.t
+	desc = ottomanagitators.1.d
+	flavor = ottomanagitators.1.f
 
 	duration = 3
 
@@ -44,8 +44,8 @@ ottoman_agitators.1 = { #Namık Kemal
 		set_variable = namik_kemal_spawn
 	}
 
-	option = {
-		name = "The desire to be favored by anyone, its price is freedom." #Kimsenin lütfuna olma tadip, bedeli cevheri hürriyettir.
+	option = { #Kimsenin lütfuna olma tadip, bedeli cevheri hürriyettir.
+		name = ottomanagitators.1.a #"The desire to be favored by anyone, its price is freedom." 
 		default_option = yes
 		# ai_chance = {
 		# 	base = 20
@@ -62,8 +62,8 @@ ottoman_agitators.1 = { #Namık Kemal
 		}
 	}
 
-	option = {
-		name = "It is impossible to destroy freedom through oppression and heresy." #Ne mümkün zulm ile bidad ile imha-i hürriyet.
+	option = { #Ne mümkün zulm ile bidad ile imha-i hürriyet.
+		name = ottomanagitators.1.b #"It is impossible to destroy freedom through oppression and heresy." 
 		scope:historic_agitator_scope = {
 			add_modifier = {
 				name = modifier_kemal_popularity
