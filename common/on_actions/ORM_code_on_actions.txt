@@ -1,0 +1,26 @@
+on_monthly_pulse_country = {
+	on_actions = {
+		on_orm_monthly_pulse_country
+	}
+}
+
+on_orm_monthly_pulse_country = {
+	events = {
+		#Agitators
+		ottoman_agitators.1
+
+		#Succession
+		ottomansuccession.1
+		ottomansuccession.2
+		ottomansuccession.4
+		ottomansuccession.6
+		ottomansuccession.7
+		ottomansuccession.8
+
+		#Major Events
+		youngturkrevolution.1
+		youngturkrevolution.2
+		1876coup.1
+		1876coup.3
+	}
+}

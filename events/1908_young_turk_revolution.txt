@@ -1,7 +1,7 @@
 namespace = youngturkrevolution
 
 #1908 Revolution
-youngturkrevolution1 = {
+youngturkrevolution.1 = {
 	type = country_event
 	placement = root
 	title = "Long Live The Revolution!"
@@ -45,7 +45,7 @@ youngturkrevolution1 = {
 }
 #March of 31
 
-youngturkrevolution2 = {
+youngturkrevolution.2 = {
 	type = country_event
 	placement = root
 	title = "31 March Incident"
