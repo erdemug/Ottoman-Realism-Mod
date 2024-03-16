@@ -4,9 +4,9 @@ namespace = ottomansuccession
 ottomansuccession.1 = {
 	type = country_event
 	placement = root
-	title = "Sultan Mahmud is dead"
-	desc = "Placeholder_desc"
-	flavor = "placeholder_flavor"
+	title = ottomansuccession.1.t #Sultan Mahmud is dead!
+	desc = ottomansuccession.1.d
+	flavor = ottomansuccession.1.f
 
 	duration = 3
 
@@ -35,7 +35,7 @@ ottomansuccession.1 = {
 	}
 
 	option = {
-		name = "Placeholder"
+		name = ottomansuccession.1.a
 		default_option = yes
 		ruler = {
 			kill_character = yes
@@ -55,9 +55,9 @@ ottomansuccession.1 = {
 ottomansuccession.2 = {
 	type = country_event
 	placement = root
-	title = "Sultan Abdülmecid is dead"
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = ottomansuccession.2.t
+	desc = ottomansuccession.2.d
+	flavor = ottomansuccession.2.f
 
 	duration = 3
 
@@ -86,7 +86,7 @@ ottomansuccession.2 = {
 	}
 
 	option = {
-		name = "Placeholder"
+		name = ottomansuccession.2.a
 		default_option = yes
 		ruler = {
 			kill_character = yes
@@ -106,9 +106,9 @@ ottomansuccession.2 = {
 ottomansuccession.3 = {
 	type = country_event
 	placement = root
-	title = "After 1876 Coup - Who will rule the Empire?"
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = ottomansuccession.3.t
+	desc = ottomansuccession.3.d
+	flavor = ottomansuccession.3.f
 
 	duration = 3
 
@@ -132,12 +132,12 @@ ottomansuccession.3 = {
 	}
 
 	option = {
-		name = "Abdülaziz is dead. Long live Sultan Murad!"
+		name = ottomansuccession.3.a
 		default_option = yes
 		ruler = {
 			kill_character = yes
 		}
-		heir = {
+		heir = { #Murad V
 			add_trait = senile
 			set_character_as_ruler = yes
 		}
@@ -146,14 +146,27 @@ ottomansuccession.3 = {
 			heir = yes
 		}
 		set_variable = successful_1876_coup
+		# monarchists get VERY angry
+		every_interest_group = {
+			limit = {
+				law_stance = {
+					law = law_type:law_monarchy
+					value > neutral
+				}
+			}
+			add_modifier = {
+				name = regicide
+				months = short_modifier_time
+			}
+		}
 	}
 
 	# option = {
-	# 	name = "Coup is unsuccessful. Primogeniture is enacted."
+	# 	name = ottomansuccession.3.b
 	# }
 
 	# option = {
-	# 	name = "Abdülaziz is puppet of Young Turks now."
+	# 	name = ottomansuccession.3.c
 	# }
 
 }
@@ -162,9 +175,9 @@ ottomansuccession.3 = {
 ottomansuccession.4 = {
 	type = country_event
 	placement = root
-	title = "Murad is not well. Who will rule the Empire?"
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = ottomansuccession.4.t
+	desc = ottomansuccession.4.d
+	flavor = ottomansuccession.4.f
 
 	duration = 3
 
@@ -195,15 +208,19 @@ ottomansuccession.4 = {
 	}
 
 	option = {
-		name = "Long live Sultan Abdülhamid-i Sani! He will promulgate the constitution!"
+		name = ottomansuccession.4.a
 		default_option = yes
 		custom_tooltip = {
 			text = leader_abdicates_the_throne_tt
 			scope:abdicating_monarch = {
 				exile_character_with_martyrdom = yes
+				add_modifier = {
+					name = deposed_ruler_modifier
+					months = short_modifier_time
+				}
 			}
 		}
-		heir = {
+		heir = {	#Abdulhamid II
 			set_character_as_ruler = yes
 		}
 		create_character = {
@@ -216,7 +233,7 @@ ottomansuccession.4 = {
 	}
 
 	# option = {
-	# 	name = "He is not that sick though, is he?"
+	# 	name = ottomansuccession.4.b
 	# }
 
 }
@@ -225,9 +242,9 @@ ottomansuccession.4 = {
 ottomansuccession.5 = {
 	type = country_event
 	placement = root
-	title = "Sultan Hamid is deposed."
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = ottomansuccession.5.t
+	desc = ottomansuccession.5.d
+	flavor = ottomansuccession.5.f
 
 	duration = 3
 
@@ -251,7 +268,7 @@ ottomansuccession.5 = {
 	}
 
 	option = {
-		name = "Long live Sultan Mehmed Reşad! He will listen to the people!"
+		name = ottomansuccession.5.a
 		default_option = yes
 		custom_tooltip = {
 			text = leader_abdicates_the_throne_tt
@@ -274,9 +291,9 @@ ottomansuccession.5 = {
 ottomansuccession.6 = {
 	type = country_event
 	placement = root
-	title = "Yusuf İzzeddin Efendi died."
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = ottomansuccession.6.t
+	desc = ottomansuccession.6.d
+	flavor = ottomansuccession.6.f
 
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
@@ -303,7 +320,7 @@ ottomansuccession.6 = {
 	}
 
 	option = {
-		name = "Mehmed Vahideddin is the new heir to the throne."
+		name = ottomansuccession.6.a
 		default_option = yes
 		heir = {
 			kill_character = yes
@@ -320,9 +337,9 @@ ottomansuccession.6 = {
 ottomansuccession.7 = {
 	type = country_event
 	placement = root
-	title = "Sultan Reşad is dead."
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = ottomansuccession.7.t
+	desc = ottomansuccession.7.d
+	flavor = ottomansuccession.7.f
 
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
@@ -349,7 +366,7 @@ ottomansuccession.7 = {
 	}
 
 	option = {
-		name = "Long Live Mehmed-i Sadis."
+		name = ottomansuccession.7.a
 		default_option = yes
 		ruler = {
 			kill_character = yes
@@ -369,9 +386,9 @@ ottomansuccession.7 = {
 ottomansuccession.8 = {
 	type = country_event
 	placement = root
-	title = "Sultan Mehmed Vahideddin is dead."
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = ottomansuccession.8.t
+	desc = ottomansuccession.8.d
+	flavor = ottomansuccession.8.f
 
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
@@ -398,7 +415,7 @@ ottomansuccession.8 = {
 	}
 
 	option = {
-		name = "Long Live Abdülmecid-i Sani."
+		name = ottomansuccession.8.a
 		default_option = yes
 		ruler = {
 			kill_character = yes

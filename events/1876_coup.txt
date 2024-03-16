@@ -4,9 +4,9 @@ namespace = 1876coup
 1876coup.1 = {
 	type = country_event
 	placement = root
-	title = "Coup!"
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = 1876coup.1.t
+	desc = 1876coup.1.d
+	flavor = 1876coup.1.f
 
 	duration = 3
 
@@ -48,7 +48,7 @@ namespace = 1876coup
 	}
 
 	option = {
-		name = "Long Live the Young Turks!"
+		name = 1876coup.1.a
 		default_option = yes
 		set_variable = successful_1876_coup
 		owner = {
@@ -56,10 +56,10 @@ namespace = 1876coup
 		}
 	}
 
-	option = {
-		name = "Abdülaziz is victorious!"
-		set_variable = defeated_1876_coup
-	}
+	# option = {
+	# 	name = 1876coup.1.b
+	# 	set_variable = defeated_1876_coup
+	# }
 
 }
 
@@ -68,9 +68,9 @@ namespace = 1876coup
 1876coup.2 = {
 	type = country_event
 	placement = root
-	title = "Kanun-ı Esasi!"
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = 1876coup.2.t
+	desc = 1876coup.2.d
+	flavor = 1876coup.2.f
 
 	duration = 3
 
@@ -91,7 +91,7 @@ namespace = 1876coup
 	}
 
 	option = {
-		name = "Long Live the Constitution!"
+		name = 1876coup.2.a
 		default_option = yes
 		set_variable = constitution_1876
 		activate_law = law_type:law_census_voting
@@ -106,7 +106,7 @@ namespace = 1876coup
 	}
 
 	# option = {
-	# 	name = "Mithat's dream!"
+	# 	name = 1876coup.2.b
 	# 	set_variable = constitution_mithat
 	# 	activate_law = law_type:law_census_voting
 	# 	activate_law = law_type:law_freedom_of_conscience
@@ -121,7 +121,7 @@ namespace = 1876coup
 	# }
 
 	# option = {
-	# 	name = "That is too much..."
+	# 	name = 1876coup.2.c
 	# 	set_variable = constitution_inadequate
 	# 	activate_law = law_type:law_freedom_of_conscience
 	# 	every_interest_group = {
@@ -151,9 +151,9 @@ namespace = 1876coup
 1876coup.3 = {
 	type = country_event
 	placement = root
-	title = "About the constitution..."
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = 1876coup.3.t
+	desc = 1876coup.3.d
+	flavor = 1876coup.3.f
 
 	duration = 3
 
@@ -181,23 +181,23 @@ namespace = 1876coup
 	}
 
 	option = {
-		name = "Suspend it and exile Mithat"
+		name = 1876coup.3.a
 		default_option = yes
 		set_variable = constitution_suspended
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_censorship
-		every_interest_group = {
-			limit = {
-				law_stance = {
-					law = law_type:law_census_voting
-					value > neutral
-				}
-			}
-			add_modifier = {
-				name = "Despotism"
-				months = 360
-			}
+		add_modifier = {
+			name = suppressing_radicals
+			months = short_modifier_time
+		}
+		add_loyalists = {
+			strata = rich
+			value = very_large_radicals
+		}
+		add_radicals = {
+			value = medium_radicals
+			strata = middle
 		}
 		scope:mithat_pasa = {
 			exile_character_with_martyrdom = yes
@@ -205,10 +205,10 @@ namespace = 1876coup
 	}
 
 	# option = {
-	# 	name = "Constitution is vital for us."		
+	# 	name = 1876coup.3.b		
 	# }
 
 	# option = {
-	# 	name = "Let's trim it a little bit..."		
+	# 	name = 1876coup.3.c
 	# }
 }

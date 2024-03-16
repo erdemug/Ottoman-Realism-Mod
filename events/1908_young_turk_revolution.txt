@@ -4,9 +4,9 @@ namespace = youngturkrevolution
 youngturkrevolution.1 = {
 	type = country_event
 	placement = root
-	title = "Long Live The Revolution!"
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = youngturkrevolution.1.t
+	desc = youngturkrevolution.1.d
+	flavor = youngturkrevolution.1.f
 
 	duration = 3
 
@@ -34,7 +34,7 @@ youngturkrevolution.1 = {
 	}
 
 	option = {
-		name = "Restore the Constitution! Recall the Parliament"
+		name = youngturkrevolution.1.a #"Restore the Constitution! Recall the Parliament"
 		default_option = yes
 		set_variable = successful_revolution
 		activate_law = law_type:law_census_voting
@@ -48,9 +48,9 @@ youngturkrevolution.1 = {
 youngturkrevolution.2 = {
 	type = country_event
 	placement = root
-	title = "31 March Incident"
-	desc = "Placeholder"
-	flavor = "placeholder"
+	title = youngturkrevolution.2.t
+	desc = youngturkrevolution.2.d
+	flavor = youngturkrevolution.2.f
 
 	duration = 3
 
@@ -77,7 +77,7 @@ youngturkrevolution.2 = {
 	}
 
 	option = {
-		name = "Action Army is successful"
+		name = youngturkrevolution.2.a #"Action Army is successful"
 		default_option = yes
 		owner = {
 			trigger_event = { id = ottomansuccession.5 popup = yes }
@@ -86,7 +86,7 @@ youngturkrevolution.2 = {
 	}
 
 	# option = {
-	# 	name = "Long Live the Sultan!"
+	# 	name = youngturkrevolution.2.b #"Long Live the Sultan!"
 	# 	owner = {
 	# 		trigger_event = { id = ottomansuccession.3 popup = yes }
 	# 	}
