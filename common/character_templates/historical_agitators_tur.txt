@@ -276,7 +276,7 @@ agitator_tevfik_fikret = {
 
 agitator_yusuf_akcura = {
 	first_name = Yusuf
-	last_name = "Akçura"
+	last_name = "Akcura"
 	culture = cu:tatar
 	interest_group = ig_armed_forces
 	ideology = ideology_ethno_nationalist
@@ -303,7 +303,7 @@ agitator_yusuf_akcura = {
 
 agitator_ziya_gokalp = {
 	first_name = Ziya
-	last_name = "Gökalp"
+	last_name = "Gokalp"
 	interest_group = ig_petty_bourgeoisie
 	ideology = ideology_corporatist_leader
 	birth_date = 1876.3.23
@@ -413,8 +413,8 @@ agitator_mustafa_suphi = {
 }
 
 agitator_said_nursi = {
-	first_name = "Said"
-	last_name = "Nursi"
+	first_name = Said
+	last_name = Nursi
 	culture = cu:kurdish
 	interest_group = ig_devout
 	ideology = ideology_traditionalist
@@ -589,8 +589,8 @@ commander_mahmud_sevket = {
 }
 
 commander_kazim_karabekir = {
-	first_name = Kazim
-	last_name = "Karabekir"
+	first_name = "Kazim"
+	last_name = Karabekir
 	is_general = yes
 	interest_group = ig_armed_forces
 	ideology = ideology_traditionalist
