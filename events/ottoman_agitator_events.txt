@@ -1,0 +1,81 @@
+namespace = ottoman_agitators
+
+ottoman_agitators.1 = { #Namık Kemal
+	type = country_event
+	placement = root
+
+	gui_window = event_window_1char_tabloid
+	left_icon = scope:historic_agitator_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	title = "Placeholder_title"
+	desc = "Placeholder_desc"
+	flavor = "Placeholder_flavor"
+
+	duration = 3
+
+	trigger = {
+		has_dlc_feature = voice_of_the_people_content
+		c:TUR ?= this
+		has_law = law_type:law_monarchy
+		game_date >= 1862.1.1
+		game_date < 1888.12.2
+		NOT = { has_variable = namik_kemal_spawn }
+		has_technology_researched = romanticism
+	}
+
+	immediate = {
+		create_character = {
+			template = agitator_namik_kemal
+			on_created = {
+				set_variable = namik_kemal_var
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_variable = namik_kemal_var
+			}
+			save_scope_as = historic_agitator_scope
+		}
+		set_variable = namik_kemal_spawn
+	}
+
+	option = {
+		name = "The desire to be favored by anyone, its price is freedom." #Kimsenin lütfuna olma tadip, bedeli cevheri hürriyettir.
+		default_option = yes
+		# ai_chance = {
+		# 	base = 20
+		# }
+		scope:historic_agitator_scope = {
+			interest_group = {
+				add_modifier = {
+					name = modifier_kemal_in_exile
+					months = normal_modifier_time
+					is_decaying = yes
+				}
+			}
+			exile_character_with_martyrdom = yes
+		}
+	}
+
+	option = {
+		name = "It is impossible to destroy freedom through oppression and heresy." #Ne mümkün zulm ile bidad ile imha-i hürriyet.
+		scope:historic_agitator_scope = {
+			add_modifier = {
+				name = modifier_kemal_popularity
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		capital = {
+			add_radicals_in_state = {
+				value = medium_radicals
+				strata = middle
+			}
+		}
+	}
+}

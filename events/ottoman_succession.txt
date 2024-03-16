@@ -5,8 +5,8 @@ ottomansuccession.1 = {
 	type = country_event
 	placement = root
 	title = "Sultan Mahmud is dead"
-	desc = "Placeholder"
-	flavor = "placeholder"
+	desc = "Placeholder_desc"
+	flavor = "placeholder_flavor"
 
 	duration = 3
 

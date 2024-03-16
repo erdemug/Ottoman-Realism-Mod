@@ -6823,7 +6823,7 @@ turkish={
 		Adile Atiye Ayşe Cemile Emine Fatma Hamide Hatice Hayriye Mihrimah Münire Refia Saliha Zeynep
 	}
 	regal_last_names = {
-		Osmanoğlu
+		"Osmanoğlu"
 	}
 
 	ethnicities = {

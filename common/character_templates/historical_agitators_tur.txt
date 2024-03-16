@@ -1,9 +1,10 @@
 agitator_namik_kemal = {
-	first_name = "Namık"
+	first_name = Namik_0
 	last_name = Kemal
 	historical = yes
 	culture = cu:turkish
-	birth_date = 1840.12.21
+	dna = dna_namik_kemal
+	birth_date = 1800.12.21 #1840
 	is_agitator = yes 
 	interest_group = ig_intelligentsia
 	female = no
@@ -13,20 +14,13 @@ agitator_namik_kemal = {
 		romantic
 		pious
 	}
-	agitator_usage = {
-		country_trigger = {
-			has_dlc_feature = voice_of_the_people_content
-			c:TUR ?= this
-			has_law = law_type:law_monarchy
-		}
-		earliest_usage_date = 1862.1.1
-		latest_usage_date = 1888.12.2
-		chance = 50
+	on_created = {
+
 	}
 }
 
 agitator_ziya_pasa = {	#Ziya Paşa
-	first_name = "Abdulhamid"
+	first_name = Abdulhamid
 	last_name = Ziyaeddin
 	historical = yes
 	culture = cu:turkish

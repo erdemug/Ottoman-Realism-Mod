@@ -3,7 +3,7 @@
 TUR_Mahmud_II = {
 	# Mahmud II of the Ottoman Empire
 	first_name = "Mahmud"
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	ruler = yes
 	historical = yes
 	birth_date = 1785.7.20
@@ -20,7 +20,7 @@ TUR_Mahmud_II = {
 TUR_Abdulmecid_I = {
 	# Abdülmecid I of the Ottoman Empire
 	first_name = "Abdulmecid"
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	heir = yes
 	historical = yes
 	birth_date = 1823.4.25
@@ -37,7 +37,7 @@ TUR_Abdulmecid_I = {
 TUR_Abdulaziz = {
 	# Abdülaziz of the Ottoman Empire
 	first_name = "Abdulaziz"		
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	birth_date = 1830.2.8 
 	culture = cu:turkish
 	historical = yes
@@ -54,7 +54,7 @@ TUR_Abdulaziz = {
 TUR_Murad_V = {
 	# Murad V of the Ottoman Empire
 	first_name = "Murad"		
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	birth_date = 1830.2.8 
 	culture = cu:turkish
 	historical = yes
@@ -71,7 +71,7 @@ TUR_Murad_V = {
 TUR_Abdulhamid_II = {
 	# Abdülhamid II of the Ottoman Empire
 	first_name = "Abdulhamid"		
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	birth_date = 1842.7.21 
 	culture = cu:turkish
 	historical = yes
@@ -88,7 +88,7 @@ TUR_Abdulhamid_II = {
 TUR_Mehmed_V = {
 	# Mehmed V Reşad of the Ottoman Empire
 	first_name = "Mehmed_Resad"		
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	birth_date = 1844.11.2 
 	culture = cu:turkish
 	historical = yes
@@ -104,7 +104,7 @@ TUR_Mehmed_V = {
 TUR_Yusuf_Izzeddin = {
 	# Şehzade Yusuf İzzeddin of the Ottoman Empire
 	first_name = "Yusuf_Izzeddin"	
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	birth_date = 1857.10.10 
 	culture = cu:turkish
 	historical = yes
@@ -121,7 +121,7 @@ TUR_Yusuf_Izzeddin = {
 TUR_Mehmed_VI = {
 	# Mehmed VI of the Ottoman Empire
 	first_name = "Mehmed_Vahideddin"
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	birth_date = 1861.1.14 
 	culture = cu:turkish
 	historical = yes
@@ -137,7 +137,7 @@ TUR_Mehmed_VI = {
 TUR_Abdulmecid_II = {
 	# Abdülmecid II of the Ottoman Empire
 	first_name = "Abdulmecid"		
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	birth_date = 1868.5.29 
 	culture = cu:turkish
 	historical = yes
@@ -154,7 +154,7 @@ TUR_Abdulmecid_II = {
 TUR_Mehmed_Selim = {
 	# Şehzade Mehmed Selim Efendi of the Ottoman Empire
 	first_name = "Mehmed_Selim"		
-	last_name = "Osmanoglu"
+	last_name = Osmanoglu_0
 	birth_date = 1870.1.11 
 	culture = cu:turkish
 	historical = yes
