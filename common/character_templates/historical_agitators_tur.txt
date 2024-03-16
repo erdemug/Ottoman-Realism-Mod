@@ -1,6 +1,6 @@
 agitator_namik_kemal = {
 	first_name = "Namık"
-	last_name = "Kemal"
+	last_name = Kemal
 	historical = yes
 	culture = cu:turkish
 	birth_date = 1840.12.21
@@ -26,8 +26,8 @@ agitator_namik_kemal = {
 }
 
 agitator_ziya_pasa = {	#Ziya Paşa
-	first_name = "Abdülhamid"
-	last_name = "Ziyaeddin"
+	first_name = "Abdulhamid"
+	last_name = Ziyaeddin
 	historical = yes
 	culture = cu:turkish
 	birth_date = 1829.1.1
@@ -52,6 +52,717 @@ agitator_ziya_pasa = {	#Ziya Paşa
         }   
 		earliest_usage_date = 1865.1.1
 		latest_usage_date = 1880.5.17
+		chance = 25
+	}
+}
+
+agitator_ali_suavi = {
+	first_name = Ali
+	last_name = Suavi
+	interest_group = ig_devout
+	ideology = ideology_liberal_leader
+	birth_date = 1839.12.8
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		pious
+		reckless
+		inspirational_orator
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			has_law = law_type:law_monarchy
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_devout
+        }   
+		earliest_usage_date = 1867.1.1
+		latest_usage_date = 1878.5.20
+		chance = 25
+	}
+}
+
+agitator_mustafa_fazil_pasa = {
+	first_name = "Mustafa_Fazil"
+	last_name = "al-_Alawi"
+	interest_group = ig_landowners
+	culture = cu:albanian
+	ideology = ideology_reformer
+	birth_date = 1839.12.8
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		erudite
+		arrogant
+		experienced_political_operator
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			has_law = law_type:law_monarchy
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_devout
+        }   
+		earliest_usage_date = 1867.3.1
+		latest_usage_date = 1875.12.2
+		chance = 25
+	}
+}
+
+agitator_mithat_pasa = {
+	first_name = "Ahmet_Sefik"
+	last_name = Mithat
+	interest_group = ig_intelligentsia
+	ideology = ideology_positivist
+	birth_date = 1822.10.18
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		meticulous
+		charismatic
+		experienced_offensive_planner
+	}
+	save_scope_as = mithat_pasa
+}
+
+agitator_abdullah_cevdet = {
+	first_name = Abdullah
+	last_name = Cevdet
+	culture = cu:kurdish
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian
+	birth_date = 1869.9.9
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		erudite
+		literary
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			has_law = law_type:law_monarchy
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_intelligentsia
+        }   
+		earliest_usage_date = 1889.1.1
+		latest_usage_date = 1932.11.29
+		chance = 25
+	}
+}
+
+agitator_ahmed_riza = {
+	first_name = Ahmet
+	last_name = "Riza"
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_positivist
+	birth_date = 1858.1.1
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		literary
+		basic_political_operator
+		honorable
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			has_law = law_type:law_monarchy
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_petty_bourgeoisie
+        }   
+		earliest_usage_date = 1889.1.1
+		latest_usage_date = 1930.2.26
+		chance = 25
+	}
+}
+
+agitator_mizanci_murat = {
+	first_name = Mehmed
+	last_name = Murad
+	interest_group = ig_intelligentsia
+	ideology = ideology_liberal_leader
+	birth_date = 1858.1.1
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		literary
+		basic_political_operator
+		honorable
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			has_law = law_type:law_monarchy
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_intelligentsia
+        }   
+		earliest_usage_date = 1889.1.1
+		latest_usage_date = 1917.4.15
+		chance = 25
+	}
+}
+
+agitator_huseyin_cahit = {
+	first_name = "Huseyin_Cahit"
+	last_name = "Yalcin"
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_liberal_leader
+	birth_date = 1858.1.1
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		literary
+		demagogue
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_petty_bourgeoisie
+        }   
+		earliest_usage_date = 1900.1.1
+		latest_usage_date = 1935.12.31
+		chance = 25
+	}
+}
+
+agitator_tevfik_fikret = {
+	first_name = "Mehmed_Tevfik"
+	last_name = Fikret
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	birth_date = 1867.12.24
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		literary
+		erudite
+		romantic
+		honorable
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_intelligentsia
+        }   
+		earliest_usage_date = 1895.1.1
+		latest_usage_date = 1915.8.19
+		chance = 25
+	}
+}
+
+agitator_yusuf_akcura = {
+	first_name = Yusuf
+	last_name = "Akçura"
+	culture = cu:tatar
+	interest_group = ig_armed_forces
+	ideology = ideology_ethno_nationalist
+	birth_date = 1876.12.2
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		literary
+		basic_political_operator
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_armed_forces
+        }   
+		earliest_usage_date = 1908.10.1
+		latest_usage_date = 1935.3.11
+		chance = 25
+	}
+}
+
+agitator_ziya_gokalp = {
+	first_name = Ziya
+	last_name = "Gökalp"
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_corporatist_leader
+	birth_date = 1876.3.23
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		literary
+		honorable
+		inspirational_orator
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_petty_bourgeoisie
+        }   
+		earliest_usage_date = 1909.1.1
+		latest_usage_date = 1924.10.25
+		chance = 25
+	}
+}
+
+agitator_talat_pasa = {
+	first_name = Mehmed
+	last_name = Talat
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_authoritarian
+	birth_date = 1874.9.1
+	is_agitator = yes 
+	historical = yes
+	traits = {
+		firebrand
+		ambitious
+		experienced_political_operator
+		cruel
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_petty_bourgeoisie
+        }   
+		earliest_usage_date = 1906.7.1
+		latest_usage_date = 1921.3.15
+		chance = 50
+	}
+}
+
+agitator_halide_edip = {
+	first_name = Halide
+	last_name = Edib
+	interest_group = ig_intelligentsia
+	ideology = ideology_feminist
+	birth_date = 1884.1.1
+	is_agitator = yes
+	female = yes 
+	historical = yes
+	traits = {
+		romantic
+		literary
+		inspirational_orator
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			NOT = { has_law = law_type:law_womens_suffrage }
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_intelligentsia
+        }   
+		earliest_usage_date = 1909.1.1
+		latest_usage_date = 1935.12.31
+		chance = 50
+	}
+}
+
+agitator_mustafa_suphi = {
+	first_name = Mustafa
+	last_name = Suphi
+	interest_group = ig_trade_unions
+	ideology = ideology_vanguardist
+    religion = rel:atheist
+	birth_date = 1882.8.4
+	is_agitator = yes
+	historical = yes
+	traits = {
+		erudite
+		reckless
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_trade_unions
+        }   
+		earliest_usage_date = 1911.1.1
+		latest_usage_date = 1921.1.28
+		chance = 25
+	}
+}
+
+agitator_said_nursi = {
+	first_name = "Said"
+	last_name = "Nursi"
+	culture = cu:kurdish
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+    religion = rel:sunni
+	birth_date = 1878.1.1
+	is_agitator = yes
+	historical = yes
+	traits = {
+		erudite
+		reckless
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_devout
+        }   
+		earliest_usage_date = 1908.1.1
+		latest_usage_date = 1935.12.31
+		chance = 50
+	}
+}
+
+agitator_sefik_husnu = {
+	first_name = "Sefik_Husnu"
+	last_name = Deymer
+	interest_group = ig_intelligentsia
+	ideology = ideology_vanguardist
+    religion = rel:atheist
+	birth_date = 1887.1.1
+	is_agitator = yes
+	historical = yes
+	traits = {
+		erudite
+		tactful
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_intelligentsia
+        }   
+		earliest_usage_date = 1919.9.22
+		latest_usage_date = 1935.12.31
+		chance = 25
+	}
+	interest_group_leader_usage = {
+        country_trigger = {
+            c:TUR ?= this
+        }
+        interest_group_trigger = {
+            is_interest_group_type = ig_intelligentsia
+        }
+        earliest_usage_date = 1919.9.22
+        latest_usage_date = 1935.12.31
+        chance = 25
+    }
+}
+
+agitator_sevket_sureyya = {
+	first_name = "Sevket_Sureyya"
+	last_name = Aydemir
+	interest_group = ig_rural_folk
+	ideology = ideology_positivist	#Kadro movement
+	birth_date = 1897.1.1
+	is_agitator = yes
+	historical = yes
+	traits = {
+		literary
+		reckless
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_rural_folk
+        }   
+		earliest_usage_date = 1923.1.1
+		latest_usage_date = 1935.12.31
+		chance = 25
+	}
+}
+
+agitator_nazim_hikmet = {
+	first_name = "Nazim"
+	last_name = Hikmet
+	interest_group = ig_intelligentsia
+	ideology = ideology_communist
+	birth_date = 1902.1.14
+	is_agitator = yes
+	historical = yes
+	traits = {
+		literary
+		romantic
+		firebrand
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_intelligentsia
+        }   
+		earliest_usage_date = 1924.12.1
+		latest_usage_date = 1935.12.31
+		chance = 25
+	}
+}
+
+#Commanders
+commander_resneli_niyazi = {
+	first_name = "Ahmet_Niyazi"
+	last_name = "Resneli"
+	culture = cu:albanian
+	is_general = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	birth_date = 1873.1.1 
+	historical = yes
+	traits = {
+		charismatic
+		mountain_commander
+		bandit
+	}
+	commander_usage = {
+		country_trigger = {
+			c:TUR ?= this
+			has_dlc_feature = rp1_content
+			OR = {
+				has_law = law_type:law_autocracy
+				has_law = law_type:law_oligarchy
+			}
+		}
+		role = general
+		earliest_usage_date = 1903.1.1
+		latest_usage_date = 1913.4.17	
+		chance = 75
+	}
+}
+
+commander_mahmud_sevket = {
+	first_name = Mahmud
+	last_name = "Sevket"
+	culture = cu:georgian
+	religion = sunni
+	is_general = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	birth_date = 1873.1.1 
+	historical = yes
+	traits = {
+		imposing
+		basic_offensive_planner
+	}
+	commander_usage = {
+		country_trigger = {
+			c:TUR ?= this
+			has_dlc_feature = rp1_content
+		}
+		role = general
+		earliest_usage_date = 1899.1.1
+		latest_usage_date = 1913.6.11	
+		chance = 50
+	}
+}
+
+commander_kazim_karabekir = {
+	first_name = Kazim
+	last_name = "Karabekir"
+	is_general = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_traditionalist
+	birth_date = 1882.7.23 
+	historical = yes
+	traits = {
+		stalwart_defender
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			c:TUR ?= this
+			has_dlc_feature = rp1_content
+		}
+		role = general
+		earliest_usage_date = 1907.1.1
+		latest_usage_date = 1935.12.31	
+		chance = 50
+	}
+}
+
+commander_mustafa_kemal = {
+	first_name = Mustafa
+	last_name = Kemal
+	is_general = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_positivist
+	birth_date = 1881.1.1 
+	historical = yes
+	traits = {
+		ambitious
+		charismatic
+		popular_commander
+		alcoholic
+		sickly
+	}
+	commander_usage = {
+		country_trigger = {
+			c:TUR ?= this
+			has_dlc_feature = rp1_content
+		}
+		role = general
+		earliest_usage_date = 1906.10.1
+		latest_usage_date = 1919.5.19	
+		chance = 50
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			has_law = law_type:law_monarchy
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_armed_forces
+        }   
+		earliest_usage_date = 1906.10.1
+		latest_usage_date = 1935.12.31
+		chance = 50
+	}
+	interest_group_leader_usage = {
+        country_trigger = {
+            c:TUR ?= this
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1919.5.19
+        latest_usage_date = 1935.12.31
+        chance = 50
+    }
+}
+
+commander_rauf_orbay = {
+	first_name = Rauf
+	last_name = Orbay
+	is_admiral = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_traditionalist
+	birth_date = 1881.7.27 
+	historical = yes
+	traits = {
+		experienced_diplomat
+		basic_naval_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			c:TUR ?= this
+			has_dlc_feature = rp1_content
+		}
+		role = admiral
+		earliest_usage_date = 1904.1.1
+		latest_usage_date = 1921.11.21	
+		chance = 25
+	}
+}
+
+commander_ismet_inonu = {
+	first_name = "Ismet"
+	last_name = "Inonu"
+	is_general = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_protectionist
+	birth_date = 1884.9.24 
+	historical = yes
+	traits = {
+		experienced_diplomat
+		cautious
+		basic_artillery_commander
+		master_bureaucrat
+	}
+	commander_usage = {
+		country_trigger = {
+			c:TUR ?= this
+			has_dlc_feature = rp1_content
+		}
+		role = general
+		earliest_usage_date = 1908.1.1
+		latest_usage_date = 1922.10.11	
+		chance = 25
+	}
+	interest_group_leader_usage = {
+        country_trigger = {
+            c:TUR ?= this
+			NOT = { has_law = law_type:law_monarchy }
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1922.10.11
+        latest_usage_date = 1935.12.31
+        chance = 25
+    }
+}
+
+commander_fethi_okyar = {
+	first_name = Fethi
+	last_name = Okyar
+	is_general = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	birth_date = 1880.4.29 
+	historical = yes
+	traits = {
+		cautious
+		tactful
+		experienced_diplomat
+	}
+	commander_usage = {
+		country_trigger = {
+			c:TUR ?= this
+			has_dlc_feature = rp1_content
+		}
+		role = general
+		earliest_usage_date = 1904.1.1
+		latest_usage_date = 1913.9.14	
+		chance = 25
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			c:TUR ?= this
+			NOT = { has_law = law_type:law_monarchy }
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            is_interest_group_type = ig_armed_forces
+        }   
+		earliest_usage_date = 1907.10.1
+		latest_usage_date = 1935.12.31
 		chance = 25
 	}
 }

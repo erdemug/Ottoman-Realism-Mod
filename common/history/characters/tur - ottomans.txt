@@ -4,37 +4,12 @@ CHARACTERS = {
 	c:TUR = {
 		create_character = {
 			# Mahmud II of the Ottoman Empire
-			#role = politician # Remove this line
-			first_name = Mahmud
-			last_name = Osmanoglu
-			ruler = yes
-			historical = yes
-			birth_date = 1785.7.20
-			dna = dna_mahmud_02
-			interest_group = ig_intelligentsia
-			ideology = ideology_moderate
-			traits = {
-				ambitious
-				innovative
-				sickly
-			}
+			template =  TUR_Mahmud_II
 		}
 
 		create_character = {
-			#role = politician # Remove this line
-			first_name = Abdulmecid
-			last_name = Osmanoglu
-			heir = yes
-			historical = yes
-			birth_date = 1823.4.25
-			dna = dna_abdulmecid_01
-			interest_group = ig_intelligentsia
-			ideology = ideology_moderate
-			traits = {
-				persistent
-				tactful
-				innovative
-			}
+			# Abdülmecid I of the Ottoman Empire
+			template =  TUR_Abdulmecid_I
 		}
 
 

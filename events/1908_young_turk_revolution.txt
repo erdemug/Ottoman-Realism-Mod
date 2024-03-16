@@ -1,0 +1,96 @@
+namespace = youngturkrevolution
+
+#1908 Revolution
+youngturkrevolution1 = {
+	type = country_event
+	placement = root
+	title = "Long Live The Revolution!"
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	duration = 3
+
+	event_image = {
+		video = "votp_cops_march"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+		has_variable = constitution_suspended
+		game_date >= 1908.7.1
+		has_law = law_type:law_monarchy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+		}
+		NOT = { has_variable = 1908_revolution_triggered }
+	}
+
+	immediate = {
+		set_variable = 1908_revolution_triggered
+	}
+
+	option = {
+		name = "Restore the Constitution! Recall the Parliament"
+		default_option = yes
+		set_variable = successful_revolution
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_right_of_assembly
+	}
+
+}
+#March of 31
+
+youngturkrevolution2 = {
+	type = country_event
+	placement = root
+	title = "31 March Incident"
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+		has_variable = successful_revolution
+		game_date >= 1909.4.1
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = 31_March_Incident }
+		ruler = {
+			has_template = TUR_Abdulhamid_II
+		}
+	}
+
+	immediate = {
+		set_variable = 31_March_Incident
+	}
+
+	option = {
+		name = "Action Army is successful"
+		default_option = yes
+		owner = {
+			trigger_event = { id = ottomansuccession.5 popup = yes }
+		}
+		set_variable = supressed_rebellion
+	}
+
+	# option = {
+	# 	name = "Long Live the Sultan!"
+	# 	owner = {
+	# 		trigger_event = { id = ottomansuccession.3 popup = yes }
+	# 	}
+	# 	set_variable = successful_counterrevolution
+	# }
+
+}
