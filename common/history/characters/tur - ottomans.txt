@@ -4,45 +4,20 @@ CHARACTERS = {
 	c:TUR = {
 		create_character = {
 			# Mahmud II of the Ottoman Empire
-			#role = politician # Remove this line
-			first_name = Mahmud
-			last_name = Osmanoglu
-			ruler = yes
-			historical = yes
-			birth_date = 1785.7.20
-			dna = dna_mahmud_02
-			interest_group = ig_intelligentsia
-			ideology = ideology_moderate
-			traits = {
-				ambitious
-				innovative
-				sickly
-			}
+			template =  TUR_Mahmud_II
 		}
 
 		create_character = {
-			#role = politician # Remove this line
-			first_name = Abdulmecid
-			last_name = Osmanoglu
-			heir = yes
-			historical = yes
-			birth_date = 1823.4.25
-			dna = dna_abdulmecid_01
-			interest_group = ig_intelligentsia
-			ideology = ideology_moderate
-			traits = {
-				persistent
-				tactful
-				innovative
-			}
+			# Abdülmecid I of the Ottoman Empire
+			template =  TUR_Abdulmecid_I
 		}
 
 
 		create_character = {
 			# Mehmed Emin Rauf Pasha, Grand Vizier of the Ottoman Empire 1833-1839, 1842-1846, and in 1852
 			#role = politician # Remove this line
-			first_name = "Mehmet_Emin_Rauf"
-			last_name = "Saidmehmedzade"
+			first_name = Mehmed_Emin
+			last_name = Rauf
 			age = 56 # not sure of his actual birth date, born in 1780
 			ig_leader = yes
 			historical = yes
@@ -55,8 +30,8 @@ CHARACTERS = {
 
 		create_character = {
 			# Mustafa Reshid Pasha, architect of the Tanzimat Reforms
-			first_name = "Mustafa_Resid"
-			last_name = "Mustafazade"
+			first_name = Mustafa
+			last_name = Resid
 			birth_date = 1800.3.13
 			ig_leader = yes
 			historical = yes
@@ -71,7 +46,7 @@ CHARACTERS = {
 
 		create_character = {
 			# Mustafa Pasha Bushatli, last hereditary governor of northern Albania
-			first_name = "Mustafa"
+			first_name = Mustafa
 			last_name = "Bushatli"
 			age = 39 # not sure of his actual birth date, born in 1797
 			ig_leader = yes
@@ -86,8 +61,8 @@ CHARACTERS = {
 
 		create_character = {
 			# Koca Husrev Mehmed Pasha 
-			first_name = "Husrev_Mehmed"
-			last_name = "Kocazade"
+			first_name = Husrev_0
+			last_name = Mehmed
 			age = 67 # not sure of his actual birth date, born in 1756 or thereabouts
 			ig_leader = yes
 			historical = yes
@@ -115,8 +90,8 @@ CHARACTERS = {
 
 		create_character = {
 			# Mekkizade Mustafa Asim Efendi, Sheikh-ul-Islam of the Ottoman Empire from 1818-1819, 1823-1825, 1833-1846
-			first_name = "Mustafa_Asim_TUR"
-			last_name = "Mekkizade"
+			first_name = Mustafa_Asim_0
+			last_name = Mekkizade
 			age = 74
 			ig_leader = yes
 			historical = yes
@@ -128,7 +103,7 @@ CHARACTERS = {
 		
 		create_character = {
 			# Topal Izzet Mehmed Pasha, Grand Vizier of the Ottoman Empire from 1828-1829, 1841-1842
-			first_name = "Izzet_Mehmed"
+			first_name = Izzet_Mehmed
 			last_name = "Darendeli"
 			age = 44
 			ig_leader = yes
@@ -141,7 +116,7 @@ CHARACTERS = {
 
 		create_character = {
 			is_general = yes
-			first_name = "Resid_Mehmed"
+			first_name = Resid_Mehmed_0
 			last_name = "Gurcuzade"
 			age = 56
 			historical = yes
@@ -174,8 +149,8 @@ CHARACTERS = {
 
 		create_character = {
 			is_admiral = yes
-			first_name = "Tahir_Mehmed"
-			last_name = "Cengeloglu"
+			first_name = Tahir_Mehmed
+			last_name = Cengeloglu
 			hq = region_anatolia
 			commander_rank = commander_rank_3
 			age = 51
@@ -201,8 +176,8 @@ CHARACTERS = {
 
 		create_character = { # TUR, General
 			is_general = yes
-			first_name = "Hafiz_Mehmed"
-			last_name = "Cerkeszade"
+			first_name = Hafiz_Mehmed
+			last_name = Cerkeszade
 			interest_group = ig_armed_forces
 			culture = cu:north_caucasian
 			ideology = ideology_royalist
@@ -218,7 +193,7 @@ CHARACTERS = {
 
 		create_character = { # TUR, General
 			is_general = yes
-			first_name = "Omer_Lutfi_TUR"
+			first_name = Omer_Lutfi_0
 			last_name = "Latas"
 			culture = cu:serb
 			religion = sunni

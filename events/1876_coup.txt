@@ -1,0 +1,214 @@
+namespace = 1876coup
+
+#1876 Coup d'Etat
+1876coup.1 = {
+	type = country_event
+	placement = root
+	title = "Coup!"
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	duration = 3
+
+	event_image = {
+		video = "votp_conspiring"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	trigger = {
+		has_law = law_type:law_monarchy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+		}
+		game_date >= 1876.5.30
+		NOT = { has_variable = 1876_coup }
+		ruler = {
+			has_template = TUR_Abdulaziz
+		}
+	}
+
+	immediate = {
+		set_variable = 1876_coup
+		create_character = {
+			template = agitator_mithat_pasa
+			on_created = {
+				set_variable = mithat_var
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_variable = mithat_var
+			}
+			save_scope_as = mithat_pasa
+		}
+	}
+
+	option = {
+		name = "Long Live the Young Turks!"
+		default_option = yes
+		set_variable = successful_1876_coup
+		owner = {
+			trigger_event = { id = ottomansuccession.3 popup = yes }
+		}
+	}
+
+	option = {
+		name = "Abdülaziz is victorious!"
+		set_variable = defeated_1876_coup
+	}
+
+}
+
+#Kanun-ı Esasi
+
+1876coup.2 = {
+	type = country_event
+	placement = root
+	title = "Kanun-ı Esasi!"
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		#Triggered by an another event
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = "Long Live the Constitution!"
+		default_option = yes
+		set_variable = constitution_1876
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_right_of_assembly
+		c:TUR ?= {
+			set_relations = { country = c:RUS value = -30 }
+			set_relations = { country = c:FRA value = -10 }
+			set_relations = { country = c:GBR value = -20 }
+			set_relations = { country = c:AUS value = -30 }
+		}
+	}
+
+	# option = {
+	# 	name = "Mithat's dream!"
+	# 	set_variable = constitution_mithat
+	# 	activate_law = law_type:law_census_voting
+	# 	activate_law = law_type:law_freedom_of_conscience
+	# 	activate_law = law_type:law_right_of_assembly
+	# 	add_journal_entry = { type =  je_abolish_monarchy }
+	# 	c:TUR ?= {
+	# 		set_relations = { country = c:RUS value = -50 }
+	# 		set_relations = { country = c:FRA value = -20 }
+	# 		set_relations = { country = c:GBR value = -30 }
+	# 		set_relations = { country = c:AUS value = -50 }
+	# 	}
+	# }
+
+	# option = {
+	# 	name = "That is too much..."
+	# 	set_variable = constitution_inadequate
+	# 	activate_law = law_type:law_freedom_of_conscience
+	# 	every_interest_group = {
+	# 		limit = {
+	# 			law_stance = {
+	# 				law = law_type:law_census_voting
+	# 				value > neutral
+	# 			}
+	# 		}
+	# 		add_modifier = {
+	# 			name = "Failed Coup"
+	# 			months = short_modifier_time
+	# 		}
+	# 	}
+	# 	c:TUR ?= {
+	# 		set_relations = { country = c:RUS value = -10 }
+	# 		set_relations = { country = c:FRA value = 10 }
+	# 		set_relations = { country = c:GBR value = 20 }
+	# 		set_relations = { country = c:AUS value = -10 }
+	# 	}
+	# }
+
+}
+
+# Suspension of the Constitution
+
+1876coup.3 = {
+	type = country_event
+	placement = root
+	title = "About the constitution..."
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = constitution_suspended }
+		NOT = { has_variable = questions_about_constitution }
+		game_date >= 1878.2.14
+		ruler = {
+			has_template = TUR_Abdulhamid_II
+		}	
+		has_variable = constitution_1876
+	}
+
+	immediate = {
+		set_variable = questions_about_constitution
+	}
+
+	option = {
+		name = "Suspend it and exile Mithat"
+		default_option = yes
+		set_variable = constitution_suspended
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_censorship
+		every_interest_group = {
+			limit = {
+				law_stance = {
+					law = law_type:law_census_voting
+					value > neutral
+				}
+			}
+			add_modifier = {
+				name = "Despotism"
+				months = 360
+			}
+		}
+		scope:mithat_pasa = {
+			exile_character_with_martyrdom = yes
+		}
+	}
+
+	# option = {
+	# 	name = "Constitution is vital for us."		
+	# }
+
+	# option = {
+	# 	name = "Let's trim it a little bit..."		
+	# }
+}

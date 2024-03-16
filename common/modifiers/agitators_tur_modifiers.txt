@@ -1,0 +1,10 @@
+modifier_kemal_in_exile = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	interest_group_pop_attraction_mult = -0.15
+	character_popularity_add = 25
+}
+
+modifier_kemal_popularity = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_pop_attraction_mult = 0.10
+}

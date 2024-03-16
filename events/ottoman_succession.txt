@@ -1,25 +1,37 @@
 namespace = ottomansuccession
 
-# Mahmud dies
+# Mahmud dies - Abdülmecid is the new Sultan (1839)
 ottomansuccession.1 = {
 	type = country_event
 	placement = root
 	title = "Sultan Mahmud is dead"
-	desc = "Placeholder"
+	desc = "Placeholder_desc"
+	flavor = "placeholder_flavor"
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
 	gui_window = event_window_1char_tabloid
 
+	left_icon = scope:mahmud_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
 	trigger = {
+		has_law = law_type:law_monarchy
 		NOT = { has_variable = sultan_mahmud_death }
-		game_date >= 1839.7.1		
+		game_date >= 1839.7.1
+		ruler = {
+			has_template = TUR_Mahmud_II
+		}		
 	}
 
 	immediate = {
 		set_variable = sultan_mahmud_death
+		ruler = {
+			save_scope_as = mahmud_scope
+		}
 	}
 
 	option = {
@@ -32,20 +44,372 @@ ottomansuccession.1 = {
 			set_character_as_ruler = yes
 		}
 		create_character = {
-			first_name = Abdulaziz			
-			last_name = Osmanoglu
-			birth_date = 1830.2.8 
-			culture = cu:turkish
+			template =  TUR_Abdulaziz
 			heir = yes
-			historical = yes
-			religion = sunni
-			interest_group = ig_landowners
-			ideology = ideology_jingoist_leader
-			traits = { 
-				ambitious
-				bigoted
-			}
 		}
 
 	}
+}
+
+# Abdülmecid dies - Abdülaziz is the new Sultan (1861)
+ottomansuccession.2 = {
+	type = country_event
+	placement = root
+	title = "Sultan Abdülmecid is dead"
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:abdulmecid_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = sultan_abdulmecid_death }
+		game_date >= 1861.6.25
+		ruler = {
+			has_template = TUR_Abdulmecid_I
+		}		
+	}
+
+	immediate = {
+		set_variable = sultan_abdulmecid_death
+		ruler = {
+			save_scope_as = abdulmecid_scope
+		}
+	}
+
+	option = {
+		name = "Placeholder"
+		default_option = yes
+		ruler = {
+			kill_character = yes
+		}
+		heir = {
+			set_character_as_ruler = yes
+		}
+		create_character = {
+			template =  TUR_Murad_V
+			heir = yes
+		}
+
+	}
+}
+
+# After 1876 Coup - Who will rule the Empire? (1876)
+ottomansuccession.3 = {
+	type = country_event
+	placement = root
+	title = "After 1876 Coup - Who will rule the Empire?"
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:sultan_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		#Triggered by an another event
+	}
+
+	immediate = {
+		set_variable = after_1876_coup
+		ruler = {
+			save_scope_as = sultan_scope
+		}
+	}
+
+	option = {
+		name = "Abdülaziz is dead. Long live Sultan Murad!"
+		default_option = yes
+		ruler = {
+			kill_character = yes
+		}
+		heir = {
+			add_trait = senile
+			set_character_as_ruler = yes
+		}
+		create_character = {
+			template =  TUR_Abdulhamid_II
+			heir = yes
+		}
+		set_variable = successful_1876_coup
+	}
+
+	# option = {
+	# 	name = "Coup is unsuccessful. Primogeniture is enacted."
+	# }
+
+	# option = {
+	# 	name = "Abdülaziz is puppet of Young Turks now."
+	# }
+
+}
+
+# Murad is not well - Abdülhamid II is the new Sultan (1876)
+ottomansuccession.4 = {
+	type = country_event
+	placement = root
+	title = "Murad is not well. Who will rule the Empire?"
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:abdicating_monarch
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		has_variable = successful_1876_coup
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = deposed_sultan }
+		game_date >= 1876.9.1
+		ruler = {
+			has_template = TUR_Murad_V
+			has_trait = psychological_affliction
+		}		
+	}
+
+	immediate = {
+		set_variable = deposed_sultan
+		ruler = {
+			save_scope_as = abdicating_monarch
+		}
+	}
+
+	option = {
+		name = "Long live Sultan Abdülhamid-i Sani! He will promulgate the constitution!"
+		default_option = yes
+		custom_tooltip = {
+			text = leader_abdicates_the_throne_tt
+			scope:abdicating_monarch = {
+				exile_character_with_martyrdom = yes
+			}
+		}
+		heir = {
+			set_character_as_ruler = yes
+		}
+		create_character = {
+			template =  TUR_Mehmed_V
+			heir = yes
+		}
+		owner = {
+			trigger_event = { id = 1876coup.2 popup = yes }
+		}
+	}
+
+	# option = {
+	# 	name = "He is not that sick though, is he?"
+	# }
+
+}
+
+# Abdülhamid II is deposed - Mehmed V is the new Sultan (1909)
+ottomansuccession.5 = {
+	type = country_event
+	placement = root
+	title = "Sultan Hamid is deposed."
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:deposed_monarch
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		#Triggered by an another event
+	}
+
+	immediate = {
+		set_variable = abdulhamid_deposed
+		ruler = {
+			save_scope_as = deposed_monarch
+		}
+	}
+
+	option = {
+		name = "Long live Sultan Mehmed Reşad! He will listen to the people!"
+		default_option = yes
+		custom_tooltip = {
+			text = leader_abdicates_the_throne_tt
+			scope:deposed_monarch = {
+				exile_character_with_martyrdom = yes
+			}
+		}
+		heir = {
+			set_character_as_ruler = yes
+		}
+		create_character = {
+			template =  TUR_Yusuf_Izzeddin
+			heir = yes
+		}
+	}
+
+}
+
+# Death of Yusuf İzzeddin (1916)
+ottomansuccession.6 = {
+	type = country_event
+	placement = root
+	title = "Yusuf İzzeddin Efendi died."
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:yusuf_izzeddin_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = yusuf_izzeddin_death }
+		game_date >= 1916.2.1
+		ruler = {
+			has_template = TUR_Mehmed_V
+		}	
+	}
+
+	immediate = {
+		set_variable = yusuf_izzeddin_death
+		heir = {
+			save_scope_as = yusuf_izzeddin_scope
+		}
+	}
+
+	option = {
+		name = "Mehmed Vahideddin is the new heir to the throne."
+		default_option = yes
+		heir = {
+			kill_character = yes
+		}
+		create_character = {
+			template =  TUR_Mehmed_VI
+			heir = yes
+		}
+	}
+
+}
+
+# Death of Mehmed V (1918)
+ottomansuccession.7 = {
+	type = country_event
+	placement = root
+	title = "Sultan Reşad is dead."
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:mehmed_resad_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = mehmed_resad_death }
+		game_date >= 1918.7.3
+		ruler = {
+			has_template = TUR_Mehmed_V
+		}	
+	}
+
+	immediate = {
+		set_variable = mehmed_resad_death
+		ruler = {
+			save_scope_as = mehmed_resad_scope
+		}
+	}
+
+	option = {
+		name = "Long Live Mehmed-i Sadis."
+		default_option = yes
+		ruler = {
+			kill_character = yes
+		}
+		heir = {
+			set_character_as_ruler = yes
+		}
+		create_character = {
+			template =  TUR_Abdulmecid_II
+			heir = yes
+		}
+	}
+
+}
+
+# Death of Mehmed VI (1926)
+ottomansuccession.8 = {
+	type = country_event
+	placement = root
+	title = "Sultan Mehmed Vahideddin is dead."
+	desc = "Placeholder"
+	flavor = "placeholder"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:vahideddin_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = vahideddin_death }
+		game_date >= 1926.5.16
+		ruler = {
+			has_template = TUR_Mehmed_VI
+		}	
+	}
+
+	immediate = {
+		set_variable = vahideddin_death
+		ruler = {
+			save_scope_as = vahideddin_scope
+		}
+	}
+
+	option = {
+		name = "Long Live Abdülmecid-i Sani."
+		default_option = yes
+		ruler = {
+			kill_character = yes
+		}
+		heir = {
+			set_character_as_ruler = yes
+		}
+		create_character = {
+			template =  TUR_Mehmed_Selim
+			heir = yes
+		}
+	}
+
 }
