@@ -80,7 +80,7 @@ agitator_ali_suavi = {
 }
 
 agitator_mustafa_fazil_pasa = {
-	first_name = "Mustafa_Fazil"
+	first_name = Mustafa_Fazil
 	last_name = "al-_Alawi"
 	interest_group = ig_landowners
 	culture = cu:albanian
@@ -110,7 +110,7 @@ agitator_mustafa_fazil_pasa = {
 }
 
 agitator_mithat_pasa = {
-	first_name = "Ahmet_Sefik"
+	first_name = Ahmet_Sefik
 	last_name = Mithat
 	interest_group = ig_intelligentsia
 	ideology = ideology_positivist
@@ -156,7 +156,7 @@ agitator_abdullah_cevdet = {
 
 agitator_ahmed_riza = {
 	first_name = Ahmet
-	last_name = "Riza"
+	last_name = Riza
 	interest_group = ig_petty_bourgeoisie
 	ideology = ideology_positivist
 	birth_date = 1858.1.1
@@ -213,8 +213,8 @@ agitator_mizanci_murat = {
 }
 
 agitator_huseyin_cahit = {
-	first_name = "Huseyin_Cahit"
-	last_name = "Yalcin"
+	first_name = Huseyin_Cahit
+	last_name = Yalcin
 	interest_group = ig_petty_bourgeoisie
 	ideology = ideology_liberal_leader
 	birth_date = 1858.1.1
@@ -240,7 +240,7 @@ agitator_huseyin_cahit = {
 }
 
 agitator_tevfik_fikret = {
-	first_name = "Mehmed_Tevfik"
+	first_name = Mehmed_Tevfik
 	last_name = Fikret
 	interest_group = ig_intelligentsia
 	ideology = ideology_reformer
@@ -270,7 +270,7 @@ agitator_tevfik_fikret = {
 
 agitator_yusuf_akcura = {
 	first_name = Yusuf
-	last_name = "Akcura"
+	last_name = Akcura
 	culture = cu:tatar
 	interest_group = ig_armed_forces
 	ideology = ideology_ethno_nationalist
@@ -297,7 +297,7 @@ agitator_yusuf_akcura = {
 
 agitator_ziya_gokalp = {
 	first_name = Ziya
-	last_name = "Gokalp"
+	last_name = Gokalp
 	interest_group = ig_petty_bourgeoisie
 	ideology = ideology_corporatist_leader
 	birth_date = 1876.3.23
@@ -435,7 +435,7 @@ agitator_said_nursi = {
 }
 
 agitator_sefik_husnu = {
-	first_name = "Sefik_Husnu"
+	first_name = Sefik_Husnu
 	last_name = Deymer
 	interest_group = ig_intelligentsia
 	ideology = ideology_vanguardist
@@ -473,7 +473,7 @@ agitator_sefik_husnu = {
 }
 
 agitator_sevket_sureyya = {
-	first_name = "Sevket_Sureyya"
+	first_name = Sevket_Sureyya
 	last_name = Aydemir
 	interest_group = ig_rural_folk
 	ideology = ideology_positivist	#Kadro movement
@@ -499,7 +499,7 @@ agitator_sevket_sureyya = {
 }
 
 agitator_nazim_hikmet = {
-	first_name = "Nazim"
+	first_name = Nazim
 	last_name = Hikmet
 	interest_group = ig_intelligentsia
 	ideology = ideology_communist
@@ -527,8 +527,8 @@ agitator_nazim_hikmet = {
 
 #Commanders
 commander_resneli_niyazi = {
-	first_name = "Ahmet_Niyazi"
-	last_name = "Resneli"
+	first_name = Ahmet_Niyazi
+	last_name = Resneli
 	culture = cu:albanian
 	is_general = yes
 	interest_group = ig_armed_forces
@@ -558,7 +558,7 @@ commander_resneli_niyazi = {
 
 commander_mahmud_sevket = {
 	first_name = Mahmud
-	last_name = "Sevket"
+	last_name = Sevket
 	culture = cu:georgian
 	religion = sunni
 	is_general = yes
@@ -583,7 +583,7 @@ commander_mahmud_sevket = {
 }
 
 commander_kazim_karabekir = {
-	first_name = "Kazim"
+	first_name = Kazim
 	last_name = Karabekir
 	is_general = yes
 	interest_group = ig_armed_forces
@@ -684,8 +684,8 @@ commander_rauf_orbay = {
 }
 
 commander_ismet_inonu = {
-	first_name = "Ismet"
-	last_name = "Inonu"
+	first_name = Ismet
+	last_name = Inonu
 	is_general = yes
 	interest_group = ig_armed_forces
 	ideology = ideology_protectionist
