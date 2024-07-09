@@ -39,9 +39,9 @@ tur_koca_mustafa_reshid_pasha = { # Damad (or Damat) Mehmed Asi Pasha, grand viz
 }
 
 ### commanders
-tur_general_pasha = {
-	first_name = Mehmed_Naik
-	last_name = "Pasha"
+tur_general_pasha = { #Mehmed Namık Paşa
+	first_name = Mehmed_Emin
+	last_name = Namik_0
 	historical = yes
 	culture = cu:turkish
 	female = no
@@ -66,7 +66,7 @@ tur_general_pasha = {
 }
 tur_admiral_hobart = { # Augustus Charles Hobart-Hampden
 	first_name = Hobart
-	last_name = Pasha
+	last_name = Pasa
 	historical = yes
 	culture = cu:british
 	female = no
@@ -92,7 +92,7 @@ tur_admiral_hobart = { # Augustus Charles Hobart-Hampden
 }
 tur_general_mehmed_ali = { # Ludwig Karl Friedrich Detroit
 	first_name = Mehmed_Ali
-	last_name = Pasha
+	last_name = Pasa
 	historical = yes
 	culture = cu:north_german
 	female = no
@@ -118,7 +118,7 @@ tur_general_mehmed_ali = { # Ludwig Karl Friedrich Detroit
 }
 tur_general_osman_nuri = {
 	first_name = Osman_Nuri
-	last_name = Pasha
+	last_name = Pasa
 	historical = yes
 	culture = cu:turkish
 	female = no
