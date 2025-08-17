@@ -4,12 +4,12 @@ CHARACTERS = {
 	c:TUR = {
 		create_character = {
 			# Mahmud II of the Ottoman Empire
-			template =  TUR_Mahmud_II
+			template =  tur_mahmut_osmanoglu_template
 		}
 
 		create_character = {
 			# Abdülmecid I of the Ottoman Empire
-			template =  TUR_Abdulmecid_I
+			template =  tur_abdulmecid_osmanoglu_template
 		}
 
 

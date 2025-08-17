@@ -2,6 +2,42 @@
 
 # Ottoman Empire - TUR
 # Turkey & the Ottoman Empire - TUR
+tur_mahmut_osmanoglu_template = {
+	# Mahmud II of the Ottoman Empire
+	first_name = Mahmud
+	last_name = Osmanoglu_0
+	ruler = yes
+	historical = yes
+	culture = primary_culture
+	birth_date = 1785.7.20
+	dna = dna_mahmud_02
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	traits = {
+		ambitious
+		innovative
+		cancer # tuberculosis
+	}
+}
+
+tur_abdulmecid_osmanoglu_template = {
+	# Abdülmecid I of the Ottoman Empire
+	first_name = Abdulmecid
+	last_name = Osmanoglu_0
+	heir = yes
+	historical = yes
+    culture = primary_culture
+	birth_date = 1823.4.25
+	dna = dna_abdulmecid_01
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	traits = {
+		persistent
+		tactful
+		innovative
+	}
+}
+
 tur_koca_mustafa_reshid_pasha = { # Damad (or Damat) Mehmed Asi Pasha, grand vizier in 1852-1853
     first_name = Damad_Mehmed
     last_name = Ali

@@ -1,0 +1,6 @@
+### Turkey/Ottoman Empire character template file ###
+
+# Ottoman Empire - TUR
+# Turkey & the Ottoman Empire - TUR
+
+#To overwrite the Turkish characters from BPM

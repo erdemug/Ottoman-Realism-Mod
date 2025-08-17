@@ -1,38 +1,5 @@
 # Ottoman Dynasty
 
-TUR_Mahmud_II = {
-	# Mahmud II of the Ottoman Empire
-	first_name = Mahmud
-	last_name = Osmanoglu_0
-	ruler = yes
-	historical = yes
-	birth_date = 1785.7.20
-	dna = dna_mahmud_02
-	interest_group = ig_intelligentsia
-	ideology = ideology_moderate
-	traits = {
-		ambitious
-		innovative
-		sickly
-	}
-}
-
-TUR_Abdulmecid_I = {
-	# Abdülmecid I of the Ottoman Empire
-	first_name = Abdulmecid
-	last_name = Osmanoglu_0
-	heir = yes
-	historical = yes
-	birth_date = 1823.4.25
-	dna = dna_abdulmecid_01
-	interest_group = ig_intelligentsia
-	ideology = ideology_moderate
-	traits = {
-		persistent
-		tactful
-		innovative
-	}
-}
 
 TUR_Abdulaziz = {
 	# Abdülaziz of the Ottoman Empire
