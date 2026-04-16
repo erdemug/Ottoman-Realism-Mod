@@ -760,3 +760,68 @@ commander_fethi_okyar = {
 		chance = 25
 	}
 }
+
+# Butrus al-Bustani, Lebanese intellectual of the Nahda
+tur_butrus_al_bustani = {
+	first_name = "Butrus"
+	last_name = "al-Bustani"
+	historical = yes
+	birth_date = 1819.1.11 # Born on an unknown day in January of 1819
+	culture = cu:mashriqi
+	religion = rel:protestant # Born into a Maronite family, but converted to Protestantism around 1840. Mix of Congregationalist and Presbyterian, look up the National Evangelical Church of Beirut for more on the theology if you're interested.
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	traits = {
+		romantic
+		innovative
+		aesthete
+		literary
+	}
+	agitator_usage = {
+		country_trigger = {
+			any_scope_state = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1861.1.1 # His most major contributions to the Nahda began after the Lebanese civil war of 1860/61.
+		latest_usage_date = 1883.5.1 # died May 1st, 1883
+		chance = 50
+	}
+}
+
+# Warda al-Yaziji, Lebanese feminist and poet
+tur_warda_al-yaziji = {
+	first_name = "Warda"
+	last_name = "al-Yaziji"
+	historical = yes
+	female = yes
+	birth_date = 1838.6.7 # Born in 1838, exact date unknown. Died 1924, exact date unknown.
+	culture = cu:mashriqi
+	religion = rel:catholic # Melkite Greek Catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_feminist
+	traits = {
+		persistent
+		aesthete
+		erudite
+	}
+	agitator_usage = {
+		country_trigger = {
+			any_scope_state = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+		interest_group_trigger = {
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+		}
+		earliest_usage_date = 1867.1.1 # Al-Yaziji's first collection of poems was published in 1867
+		latest_usage_date = 1899.1.1 # still active in the early 20th century, but it's best if she's spawned before she's deep into her 60s
+		chance = 50
+	}
+}
