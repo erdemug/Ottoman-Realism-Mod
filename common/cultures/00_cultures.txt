@@ -6134,7 +6134,7 @@ turkish= {
 		Ihsan Ihsan_Nuri Ilhan Ilyas Irfan Isa Ishak Ismail Ismail_Fazil Ismail_Hakki Ismail_Sitki Ismet Izzet Izzet_Fuat Izzet_Mehmed Izzeddin
 		Kamil Kasim_Nuri Kazim Kazim_Nuri Kemal Kemaleddin
 		Lutfi Lutfi_Fikri
-		Mahir Mahir_Hamza Mahir_Sait Mahmud Mahmud_Ethem Mahmud_Ekrem Mahmud_Nedim Mahmud_Server Mahmud_Celalettin Mahmud_Mahir Mahmud_Naci Mazhar_Mufit Mehmed
+		Mahir Mahir_Hamza Mahir_Said Mahmud Mahmud_Ethem Mahmud_Ekrem Mahmud_Nedim Mahmud_Server Mahmud_Celalettin Mahmud_Mahir Mahmud_Naci Mazhar_Mufit Mehmed
 		Mehmed_Abdulhalim Mehmed_Akif Mehmed_Ali Mehmed_Arif Mehmed_Asim Mehmed_Behim Mehmed_Besim Mehmed_Cavid Mehmed_Celal Mehmed_Cemal Mehmed_Emin Mehmed_Esad Mehmed_Ferid Mehmed_Fuat
 		Mehmed_Haci Mehmed_Hadi Mehmed_Halet Mehmed_Kadri Mehmed_Kani Mehmed_Namik Mehmed_Nizamuddin Mehmed_Nuri Mehmed_Ragip Mehmed_Raif Mehmed_Rauf
 		Mehmed_Remzi Mehmed_Rustu Mehmed_Sadik Mehmed_Sahib Mehmed_Said Mehmed_Sakir Mehmed_Sekip Mehmed_Selim Mehmed_Serafettin Mehmed_Serif Mehmed_Sukru
